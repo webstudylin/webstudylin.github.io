@@ -93,11 +93,17 @@
 &gt; &quot;../&quot;：代表上一层目录。
 &gt; 以&quot;/&quot;开头：代表根目录。
 </code></pre><h3 id="举例："><a href="#举例：" class="headerlink" title="举例："></a>举例：</h3><p>根目录下有Site1和Image/Image.jpg，Site1下有Page1.html文件和Site2文件夹。Site2下有Page2.html和Page2Image.jpg图片文件。</p>
-<h4 id="文件在当前目录"><a href="#文件在当前目录" class="headerlink" title="*文件在当前目录"></a>*文件在当前目录</h4><p>Page2.html访问Page2Image.jpg<br>    <img src="”./Page2Image.jpg”">或者<img src="”Page2Image." jpg”=""></p>
-<h4 id="文件在上一层目录"><a href="#文件在上一层目录" class="headerlink" title="*文件在上一层目录"></a>*文件在上一层目录</h4><p>Page1.html访问Image下的Image.jpg<br>    <img src="”../Image/Image.jpg”"><br>Page2.html访问Image下的Image.jpg<br>    <img src="”../../Image/Image.jpg”"></p>
-<h4 id="文件在下一层目录"><a href="#文件在下一层目录" class="headerlink" title="*文件在下一层目录"></a>*文件在下一层目录</h4><p>Page1.html访问Site2文件夹下的Page2Image.jpg<br>    <img src="”" .="" site2="" image.jpg”=""><img src="”" site2="" image.jpg”=""></p>
-<h4 id="根目录表示法"><a href="#根目录表示法" class="headerlink" title="*根目录表示法"></a>*根目录表示法</h4><p>任何页面访问Image下的Image.jpg图片<br>    <img src="”/Image/Image.jpg”"></p>
-<h2 id="三、优缺点及使用的地方"><a href="#三、优缺点及使用的地方" class="headerlink" title="三、优缺点及使用的地方"></a>三、优缺点及使用的地方</h2><h3 id="绝对路径的优点"><a href="#绝对路径的优点" class="headerlink" title="*绝对路径的优点"></a>*绝对路径的优点</h3><pre><code>-如果有人抄袭你的网站内容，里面的链接还会指向你的网站，有些抄袭的人比较懒，根本不会去改内容。其实也不局限于被抄袭，如果有人将你的网页保存到本地电脑中，里面的链接、图片、css、以及js仍然会连接到你的网站。
+<h4 id="文件在当前目录"><a href="#文件在当前目录" class="headerlink" title="*文件在当前目录"></a>*文件在当前目录</h4><p>Page2.html访问Page2Image.jpg</p>
+<pre><code>&lt;img src=”./Page2Image.jpg”&gt;或者&lt;img src=”Page2Image. jpg”&gt;
+</code></pre><h4 id="文件在上一层目录"><a href="#文件在上一层目录" class="headerlink" title="*文件在上一层目录"></a>*文件在上一层目录</h4><p>html访问Image下的Image.jpg</p>
+<pre><code>&lt;img src=”../Image/Image.jpg”&gt;
+</code></pre><p>html访问Image下的Image.jpg</p>
+<pre><code>&lt;img src=”../../Image/Image.jpg”&gt;
+</code></pre><h4 id="文件在下一层目录"><a href="#文件在下一层目录" class="headerlink" title="*文件在下一层目录"></a>*文件在下一层目录</h4><p>html访问Site2文件夹下的Page2Image.jpg</p>
+<pre><code>&lt;img src=” ./Site2/Image.jpg” img src=” Site2/Image.jpg”&gt;
+</code></pre><h4 id="根目录表示法"><a href="#根目录表示法" class="headerlink" title="*根目录表示法"></a>*根目录表示法</h4><p>任何页面访问Image下的Image.jpg图片 </p>
+<pre><code>&lt;img src=”/Image/Image.jpg”&gt;
+</code></pre><h2 id="三、优缺点及使用的地方"><a href="#三、优缺点及使用的地方" class="headerlink" title="三、优缺点及使用的地方"></a>三、优缺点及使用的地方</h2><h3 id="绝对路径的优点"><a href="#绝对路径的优点" class="headerlink" title="*绝对路径的优点"></a>*绝对路径的优点</h3><pre><code>-如果有人抄袭你的网站内容，里面的链接还会指向你的网站，有些抄袭的人比较懒，根本不会去改内容。其实也不局限于被抄袭，如果有人将你的网页保存到本地电脑中，里面的链接、图片、css、以及js仍然会连接到你的网站。
 -如果网页位置改变，里面的链接还是指向正确的URL。
 </code></pre><h3 id="绝对路径的缺点"><a href="#绝对路径的缺点" class="headerlink" title="*绝对路径的缺点"></a>*绝对路径的缺点</h3><pre><code>-在编码编写时不方便使用绝对路径，因为链接应该指向真正的域名而不是开发站点。
 </code></pre><p><strong>相对路径的优缺点和绝对路径几乎相反。</strong></p>
@@ -109,7 +115,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/23/绝对路径与相对路径/" data-id="ciprqingw00015ov30vxxzg40" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/23/绝对路径与相对路径/" data-id="ciprqs7po0001wgv3tghjg2lx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/22/hello-world/" data-id="ciprqingw00005ov3m23dbn49" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/22/hello-world/" data-id="ciprqs7p90000wgv3yohvm45g" class="article-share-link">Share</a>
       
       
     </footer>
