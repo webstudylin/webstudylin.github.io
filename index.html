@@ -92,11 +92,35 @@
 <h2 id="二、相对路径使用的特殊符号"><a href="#二、相对路径使用的特殊符号" class="headerlink" title="二、相对路径使用的特殊符号"></a>二、相对路径使用的特殊符号</h2><h3 id="以下为建立路径所使用的几个特殊符号，及其所代表的意义。"><a href="#以下为建立路径所使用的几个特殊符号，及其所代表的意义。" class="headerlink" title="*以下为建立路径所使用的几个特殊符号，及其所代表的意义。"></a>*以下为建立路径所使用的几个特殊符号，及其所代表的意义。</h3><pre><code>&gt; &quot;./&quot;：代表目前所在的目录。
 &gt; &quot;../&quot;：代表上一层目录。
 &gt; 以&quot;/&quot;开头：代表根目录。
+</code></pre><h3 id="举例："><a href="#举例：" class="headerlink" title="举例："></a>举例：</h3><p>根目录下有Site1和Image/Image.jpg，Site1下有Page1.html文件和Site2文件夹。Site2下有Page2.html和Page2Image.jpg图片文件。</p>
+<h4 id="文件在当前目录"><a href="#文件在当前目录" class="headerlink" title="*文件在当前目录"></a>*文件在当前目录</h4><p>Page2.html访问Page2Image.jpg</p>
+<blockquote>
+<p><img src="”./Page2Image.jpg”">或者<img src="”Page2Image." jpg”=""></p>
+</blockquote>
+<h4 id="文件在上一层目录"><a href="#文件在上一层目录" class="headerlink" title="*文件在上一层目录"></a>*文件在上一层目录</h4><p>Page1.html访问Image下的Image.jpg</p>
+<blockquote>
+<p><img src="”../Image/Image.jpg”"><br>Page2.html访问Image下的Image.jpg<br><img src="”../../Image/Image.jpg”"></p>
+</blockquote>
+<h4 id="文件在下一层目录"><a href="#文件在下一层目录" class="headerlink" title="*文件在下一层目录"></a>*文件在下一层目录</h4><p>Page1.html访问Site2文件夹下的Page2Image.jpg</p>
+<blockquote>
+<p><img src="”" .="" site2="" image.jpg”=""><img src="”" site2="" image.jpg”=""></p>
+</blockquote>
+<h4 id="根目录表示法-任何页面访问Image下的Image-jpg图片"><a href="#根目录表示法-任何页面访问Image下的Image-jpg图片" class="headerlink" title="*根目录表示法,任何页面访问Image下的Image.jpg图片"></a>*根目录表示法,任何页面访问Image下的Image.jpg图片</h4><blockquote>
+<p><img src="”/Image/Image.jpg”"></p>
+</blockquote>
+<h2 id="三、优缺点及使用的地方"><a href="#三、优缺点及使用的地方" class="headerlink" title="三、优缺点及使用的地方"></a>三、优缺点及使用的地方</h2><h3 id="绝对路径的优点"><a href="#绝对路径的优点" class="headerlink" title="*绝对路径的优点"></a>*绝对路径的优点</h3><pre><code>-如果有人抄袭你的网站内容，里面的链接还会指向你的网站，有些抄袭的人比较懒，根本不会去改内容。其实也不局限于被抄袭，如果有人将你的网页保存到本地电脑中，里面的链接、图片、css、以及js仍然会连接到你的网站。
+-如果网页位置改变，里面的链接还是指向正确的URL。
+</code></pre><h3 id="绝对路径的缺点"><a href="#绝对路径的缺点" class="headerlink" title="*绝对路径的缺点"></a>*绝对路径的缺点</h3><pre><code>-在编码编写时不方便使用绝对路径，因为链接应该指向真正的域名而不是开发站点。
+</code></pre><p><strong>相对路径的优缺点和绝对路径几乎相反。</strong></p>
+<h3 id="相对路径的优点"><a href="#相对路径的优点" class="headerlink" title="*相对路径的优点"></a>*相对路径的优点</h3><pre><code>-容易移动内容，可以整个目录移动。
+-测试方法比较灵活，本机测试时比较方便。
+</code></pre><h3 id="相对路径的缺点"><a href="#相对路径的缺点" class="headerlink" title="*相对路径的缺点"></a>*相对路径的缺点</h3><pre><code>-部分内容页面换了位置时，链接容易失效。
+-容易被人大面积采集抄袭。
 </code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/23/绝对路径与相对路径/" data-id="ciprptnas0001g8v3poz9jcm6" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/23/绝对路径与相对路径/" data-id="ciprqcdrf0001rwv38ywy23b6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/22/hello-world/" data-id="ciprptnal0000g8v35oohh9bz" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/22/hello-world/" data-id="ciprqcdrf0000rwv3tjfg5n6u" class="article-share-link">Share</a>
       
       
     </footer>
