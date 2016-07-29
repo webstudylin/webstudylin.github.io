@@ -51,9 +51,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://webstudylin.github.io"></form>
@@ -86,30 +86,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="5-1"><a href="#5-1" class="headerlink" title="5-1"></a>5-1</h1><p>表单标签，与用户交互<br>语法：</p>
-<blockquote>
-<p><form method="传送方式" action="服务器文件"><br>讲解：<br>1.<form> ：<form>标签是成对出现的，以<form>开始，以</form>结束。<br>2.method ： 数据传送的方式（get/post）。<br>3.action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。<br>4、所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在<form></form>标签之间（否则用户输入的信息可提交不到服务器上哦！）。</form></form></form></p>
-</blockquote>
-<h1 id="5-2"><a href="#5-2" class="headerlink" title="5-2"></a>5-2</h1><blockquote>
-<p><form></form></p>
-<p><input type="text/password" name="名称" value="文本"><br><br>说明：<br>1、type：<br>当type=”text”时，输入框为文本输入框;<br>当type=”password”时, 输入框为密码输入框。<br>2、name：为文本框命名，以备后台程序ASP 、PHP使用。<br>3、value：为文本输入框设置默认值。(一般起到提示作用)</p>
-</blockquote>
+        <h1 id="5-1"><a href="#5-1" class="headerlink" title="5-1"></a>5-1</h1><p>表单标签，与用户交互</p>
+<pre><code>语法：
+&lt;form method=&quot;传送方式&quot; action=&quot;服务器文件&quot;&gt; 
+讲解：
+1.&lt;form&gt; ：&lt;form&gt;标签是成对出现的，以&lt;form&gt;开始，以&lt;/form&gt;结束。
+2.method ： 数据传送的方式（get/post）。
+3.action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。
+4、所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在&lt;form&gt;&lt;/form&gt;标签之间（否则用户输入的信息可提交不到服务器上哦！）。
+</code></pre><h1 id="5-2"><a href="#5-2" class="headerlink" title="5-2"></a>5-2</h1><pre><code>&lt;form&gt;
+&lt;input type=&quot;text/password&quot; name=&quot;名称&quot; value=&quot;文本&quot; /&gt;
+&lt;/form&gt;
+</code></pre><p>说明：<br>1、type：<br>当type=”text”时，输入框为文本输入框;<br>当type=”password”时, 输入框为密码输入框。<br>2、name：为文本框命名，以备后台程序ASP 、PHP使用。<br>3、value：为文本输入框设置默认值。(一般起到提示作用)</p>
 <h1 id="5-3"><a href="#5-3" class="headerlink" title="5-3"></a>5-3</h1><p>当用户需要在表单中输入大段文字时，需要用到文本输入域。</p>
 <p>语法：</p>
-<blockquote>
-<p><textarea rows="行数" cols="列数">文本</textarea><br>1、<textarea>标签是成对出现的，以</textarea><textarea>开始，以</textarea>结束。<br>2、cols ：多行输入域的列数。<br>3、rows ：多行输入域的行数。<br>4、在<textarea></textarea>标签之间可以输入默认值。<br>注意这两个属性可用css样式的width和height来代替：col用width、row用height来代替。</p>
-</blockquote>
-<h1 id="5-4"><a href="#5-4" class="headerlink" title="5-4"></a>5-4</h1><p>在使用表单设计调查表时，为了减少用户的操作，使用选择框是一个好主意，<br>html中有两种选择框，即单选框和复选框，两者的区别是单选框中的选项用户只能选择一项，<br>而复选框中用户可以任意选择多项，甚至全选。请看下面的例子:</p>
-<p>语法：</p>
-<blockquote>
-<p><input type="radio/checkbox" value="值" name="名称" checked="checked"><br>1、type:<br>   当 type=”radio” 时，控件为单选框<br>   当 type=”checkbox” 时，控件为复选框<br>2、value：提交数据到服务器的值（后台程序PHP使用）<br>3、name：为控件命名，以备后台程序 ASP、PHP 使用<br>4、checked：当设置 checked=”checked” 时，该选项被默认选中 </p>
-</blockquote>
+<pre><code>&lt;textarea rows=&quot;行数&quot; cols=&quot;列数&quot;&gt;文本&lt;/textarea&gt;
+1、&lt;textarea&gt;标签是成对出现的，以&lt;textarea&gt;开始，以&lt;/textarea&gt;结束。
+2、cols ：多行输入域的列数。
+3、rows ：多行输入域的行数。
+4、在&lt;textarea&gt;&lt;/textarea&gt;标签之间可以输入默认值。
+注意这两个属性可用css样式的width和height来代替：col用width、row用height来代替。
+</code></pre><h1 id="5-4"><a href="#5-4" class="headerlink" title="5-4"></a>5-4</h1><p>在使用表单设计调查表时，为了减少用户的操作，使用选择框是一个好主意，<br>html中有两种选择框，即单选框和复选框，两者的区别是单选框中的选项用户只能选择一项，<br>而复选框中用户可以任意选择多项，甚至全选。请看下面的例子:</p>
+<pre><code>语法：
+&lt;input   type=&quot;radio/checkbox&quot;   value=&quot;值&quot;    name=&quot;名称&quot;   checked=&quot;checked&quot;/&gt;
+</code></pre><p>1、type:<br>   当 type=”radio” 时，控件为单选框<br>   当 type=”checkbox” 时，控件为复选框<br>2、value：提交数据到服务器的值（后台程序PHP使用）<br>3、name：为控件命名，以备后台程序 ASP、PHP 使用<br>4、checked：当设置 checked=”checked” 时，该选项被默认选中 </p>
 <h1 id="5-5"><a href="#5-5" class="headerlink" title="5-5"></a>5-5</h1><p><img src="http://img.imooc.com/52e604590001ae4005270185.jpg" alt="example"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/28/unitefive/" data-id="cir7p26480000igv3rrbcbrk3" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/28/unitefive/" data-id="cir7p56gt0001scv32gvnk6pf" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -185,7 +191,7 @@ _top --在当前窗体打开链接，并替换当前的整个窗体
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/28/unitefour/" data-id="cir7p26540001igv3czg8kpfj" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/28/unitefour/" data-id="cir7p56h90003scv3d4yk2grq" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -280,7 +286,7 @@ ol-li在网页中显示的默认样式一般为：每项li前都会自带一个�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/27/unitethree/" data-id="cir7p26540004igv32iav6hqz" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/27/unitethree/" data-id="cir7p56h90004scv3u7h6cmqf" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -330,7 +336,7 @@ ol-li在网页中显示的默认样式一般为：每项li前都会自带一个�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/27/two/" data-id="cir7p26540002igv39b5l15qf" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/27/two/" data-id="cir7p56gt0002scv3d0pmymgs" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -388,7 +394,7 @@ ol-li在网页中显示的默认样式一般为：每项li前都会自带一个�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/23/绝对路径与相对路径/" data-id="cir7p26540003igv3omihpol3" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/23/绝对路径与相对路径/" data-id="cir7p56h90005scv3cyxabydg" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -433,7 +439,7 @@ ol-li在网页中显示的默认样式一般为：每项li前都会自带一个�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://webstudylin.github.io/2016/06/22/hello-world/" data-id="cir7p265j0005igv3557bx9u6" class="article-share-link">Share</a>
+      <a data-url="http://webstudylin.github.io/2016/06/22/hello-world/" data-id="cir7p56gt0000scv3by45dh3z" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -468,7 +474,7 @@ ol-li在网页中显示的默认样式一般为：每项li前都会自带一个�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -505,7 +511,7 @@ ol-li在网页中显示的默认样式一般为：每项li前都会自带一个�
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
